@@ -46,7 +46,27 @@ Windows (Command Prompt): `.venv\Scripts\activate.bat`
 
 1. Get a key: https://aistudio.google.com/apikey
 2. Copy `weegie_bot/.env.example` to `weegie_bot/.env` (and the same for `glasgow_guide/`).
-3. Paste your key:
+   Run these from this folder:
+
+   macOS / Linux:
+   ```bash
+   cp weegie_bot/.env.example weegie_bot/.env
+   cp glasgow_guide/.env.example glasgow_guide/.env
+   ```
+
+   Windows (PowerShell):
+   ```powershell
+   Copy-Item weegie_bot\.env.example weegie_bot\.env
+   Copy-Item glasgow_guide\.env.example glasgow_guide\.env
+   ```
+
+   Windows (Command Prompt):
+   ```bat
+   copy weegie_bot\.env.example weegie_bot\.env
+   copy glasgow_guide\.env.example glasgow_guide\.env
+   ```
+
+3. Open each `.env` file and paste your key:
 
 ```
 GOOGLE_GENAI_USE_ENTERPRISE=0
