@@ -44,7 +44,16 @@ Windows (Command Prompt): `.venv\Scripts\activate.bat`
 
 ## 2. Add your API key
 
-1. Get a key: https://aistudio.google.com/apikey
+1. Get a free key from Google AI Studio:
+   1. Open https://aistudio.google.com/apikey
+   2. Sign in with your Google account.
+   3. If it's your first visit, accept the Google AI Studio terms.
+   4. Click **Create API key**.
+   5. Pick an existing Google Cloud project, or let AI Studio create a new one for you.
+   6. Copy the key (a long string that starts with `AIza`) and keep it somewhere safe.
+      Treat it like a password: don't share it or put it in your code.
+
+   The free tier needs no credit card. It does have rate limits, which is plenty for this workshop.
 2. Copy `weegie_bot/.env.example` to `weegie_bot/.env` (and the same for `glasgow_guide/`).
    Run these from this folder:
 
